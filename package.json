@@ -7,5 +7,10 @@
   "license": "BSD-3-Clause",
   "scripts": {
     "clearcount": "jupyter nbconvert --to=notebook notebooks/clean_notebooks.ipynb --stdout > /dev/null"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^1.3.1",
+    "@tensorflow/tfjs-node": "^1.3.1",
+    "jimp": "^0.8.5"
   }
 }
