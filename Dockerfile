@@ -1,8 +1,8 @@
-# Dockerfile to run this example on mybinder.org
+# Dockerfile to run this example on mybinder.org.
 FROM node:12.13.0-buster
 
-# cache-busting for safety
-RUN echo cache-busting-1
+# cache-busting to force rebuild the image in mybinder.org.
+RUN echo cache-busting-2
 
 RUN apt-get update && apt-get install -y python3-pip && rm -rf /var/lib/apt/lists/*
 RUN pip3 install -U jupyterlab
