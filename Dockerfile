@@ -2,7 +2,7 @@
 FROM node:12.13.0-buster
 
 # cache-busting to force rebuild the image in mybinder.org.
-RUN echo cache-busting-3
+RUN echo cache-busting-4
 
 RUN apt-get update && apt-get install -y python3-pip && rm -rf /var/lib/apt/lists/*
 RUN pip3 install -U jupyterlab
