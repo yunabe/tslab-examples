@@ -10,3 +10,10 @@ Example notebooks of tslab (https://github.com/yunabe/tslab)
 ### Clean `"execute_count"`
 
 To clear `"execute_count"` in notebooks, run `npm run clearcount`.
+
+## Make the prebuilt image
+
+```shell
+docker build -t yunabe/tslab:20191114 -f Dockerfile_prebuilt .
+docker push yunabe/tslab:20191114
+```
