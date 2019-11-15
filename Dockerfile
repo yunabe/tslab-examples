@@ -1,2 +1,2 @@
 # Dockerfile to run this example on mybinder.org.
-FROM yunabe/tslab:20191114
+FROM yunabe/tslab:20191115

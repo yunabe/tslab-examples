@@ -2,7 +2,7 @@
 FROM node:12.13.0-buster
 
 # cache-busting to force rebuild the image in mybinder.org.
-RUN echo cache-busting-5
+RUN echo cache-busting-6
 
 RUN apt-get update &&\
   apt-get install -y python3-pip &&\
