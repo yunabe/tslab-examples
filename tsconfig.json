@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "ES2017",
+    "lib": ["es2017"],
+    "newLine": "LF",
+    "rootDir": "src",
+    "skipLibCheck": true,
+    "declaration": true,
+    "noImplicitAny": true
+  },
+  "include": ["src/**/*"]
+}

@@ -1,5 +1,5 @@
 # Dockerfile to build a prebuilt image to run this example on mybinder.org.
-FROM node:12.13.0-buster
+FROM node:lts-buster
 
 # cache-busting to force rebuild the image in mybinder.org.
 RUN echo cache-busting-6
