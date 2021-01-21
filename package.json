@@ -10,10 +10,10 @@
     "clearcount": "jupyter nbconvert --to=notebook notebooks/clean_notebooks.ipynb --stdout > /dev/null"
   },
   "dependencies": {
-    "@tensorflow/tfjs-node": "2.0.1",
-    "jimp": "0.14.0"
+    "@tensorflow/tfjs-node": "2.8.5",
+    "jimp": "0.16.1"
   },
   "devDependencies": {
-    "typescript": "3.9.6"
+    "typescript": "4.1.3"
   }
 }
