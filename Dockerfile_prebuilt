@@ -1,11 +1,11 @@
 # Dockerfile to build a prebuilt image to run this example on mybinder.org.
-FROM node:lts-buster
+FROM node:lts-bullseye
 
 # cache-busting to force rebuild the image in mybinder.org.
 RUN echo cache-busting-6
 
 RUN apt-get update &&\
-  apt-get install -y python3-pip &&\
+  apt-get install -y libzmq3-dev cmake python3-pip &&\
   rm -rf /var/lib/apt/lists/* &&\
   pip3 install --no-cache-dir -U jupyterlab
 
@@ -29,6 +29,7 @@ RUN mkdir ~/.npm-global &&\
   tslab install
 RUN git clone --depth 1 https://github.com/yunabe/tslab-examples.git
 WORKDIR ${HOME}/tslab-examples
+# TODO(yunabe): Use npm instead of yarn v1.
 RUN yarn
 
 # Notes:
